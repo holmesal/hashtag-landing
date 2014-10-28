@@ -11,7 +11,7 @@
     ng-repeat="platform in platforms" 
     ng-if="!runningOn || runningOn == platform.name" 
     class="btn downloadButton" 
-    ng-href="platform.link" 
+    ng-href="{{platform.link}}" 
     target="_blank">
       Download for {{platform.name}}
     </button>
@@ -40,7 +40,7 @@
   <retina-image class="phoneComp" src="images/phoneComp.png" retina-src="images/phoneComp@2x.png"></retina-image>
   <p>
     <span ng-repeat="platform in platforms">
-      <a ng-class="{active: 'platform.name == runningOn'}" ng-href="platform.link">{{platform.name | lowercase}}</a>
+      <a ng-class="{active: 'platform.name == runningOn'}" ng-href="{{platform.link}}">{{platform.name | lowercase}}</a>
       <span ng-if="!$last"> / </span>
     </span>
   </p>
