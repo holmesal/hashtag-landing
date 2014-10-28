@@ -2,11 +2,21 @@
 
 $darkTextColor: #464C58
 $darkBgColor: #353942
+$linkColor: #22C7CA
 
 html, body 
+  font-family: Avenir-Light
   margin: 0
   padding: 0
   +background-image(radial-gradient(circle, #FFFFFF, #F7F7F7))
+
+a 
+  color: $linkColor
+
+  &:hover
+    text-decoration: none 
+    cursor: pointer
+    color: #20A5A8
 
 =copyText
   font-family: Avenir-Medium
@@ -16,13 +26,15 @@ html, body
 .light
   text-align: center
   padding-top: 100px
-  padding-bottom: 96px
+  padding-bottom: 76px
 
   .betaImage
-    width: 150px
+    // width: 150px
+    width: 200px
+    margin-bottom: 100px
 
   .downloadButton
-    width: 200px
+    min-width: 200px
     border-radius: 3px
     background-color: transparent
     border: 1px solid $darkTextColor
@@ -34,7 +46,7 @@ html, body
     padding-bottom: 13px 
     font-size: 17px
     font-family: Avenir-Light
-    margin-top: 100px
+    margin-bottom: 20px
 
     &:hover
       cursor: pointer
@@ -43,10 +55,13 @@ html, body
   background-color: $darkBgColor
   color: white
   text-align: center
-  padding: 27px
+  // padding: 27px
+  overflow: auto
 
   .requestSection
-    margin-bottom: 20px
+    $padthai: 80px
+    margin-top: $padthai
+    margin-bottom: $padthai
 
     .yin 
       opacity: 0.75
@@ -66,8 +81,8 @@ html, body
 
 .deets
   padding: 23px
-  padding-top: 51px
-  padding-bottom: 51px
+  padding-top: 100px//51px
+  padding-bottom: 100px//51px
   text-align: center
 
   .phoneComp

@@ -13,8 +13,18 @@
     class="btn downloadButton" 
     ng-href="{{platform.link}}" 
     target="_blank">
-      Download for {{platform.name}}
-    </button>
+    Download for {{platform.name}}
+  </button>
+
+<!--   <button
+    ng-if="runningOn == 'Mac' || runningOn == 'Windows' || runningOn == 'Linux'"
+    class="btn downloadButton"
+    href="app.joinhashtag.com">
+    Try it in your browser
+  </button> -->
+
+  <p>or <a>try it in your browser</a></p>
+
 
 <!--   <button ng-if="!platform || platform == 'android'" class="btn downloadButton" href="CHANGE_THIS" target="_blank">Download for Android</button>
 
