@@ -19,16 +19,16 @@ angular.module('landingApp')
         link: 'https://itunes.apple.com/gb/app/hashtag/id920690505?mt=8'
       ,
         name: 'Android'
-        link: 'https://android.com'
+        link: 'https://play.google.com/store/apps/details?id=com.mtnlab.wavelength'
       ,
         name: 'Mac'
-        link: 'http://amazons3.com'
-      ,
-        name: 'Windows'
-        link: 'http://amazons3.com'
-      ,
-        name: 'Linux'
-        link: 'http://amazons3.com'
+        link: 'shortwave-releases.s3.amazonaws.com/Shortwave.dmg'
+      # ,
+      #   name: 'Windows'
+      #   link: 'http://amazons3.com'
+      # ,
+      #   name: 'Linux'
+      #   link: 'http://amazons3.com'
     ]
 
     if userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i )
