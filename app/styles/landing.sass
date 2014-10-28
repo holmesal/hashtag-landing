@@ -1,0 +1,80 @@
+@import "compass"
+
+$darkTextColor: #464C58
+$darkBgColor: #353942
+
+html, body 
+  margin: 0
+  padding: 0
+  +background-image(radial-gradient(circle, #FFFFFF, #F7F7F7))
+
+=copyText
+  font-family: Avenir-Medium
+  font-size: 13px
+  letter-spacing: 1.6px
+
+.light
+  text-align: center
+  padding-top: 100px
+  padding-bottom: 96px
+
+  .betaImage
+    width: 150px
+
+  .downloadButton
+    width: 200px
+    border-radius: 3px
+    background-color: transparent
+    border: 1px solid $darkTextColor
+    color: #464C58
+    display: block
+    margin-left: auto 
+    margin-right: auto
+    padding-top: 13px 
+    padding-bottom: 13px 
+    font-size: 17px
+    font-family: Avenir-Light
+    margin-top: 100px
+
+    &:hover
+      cursor: pointer
+
+.dark 
+  background-color: $darkBgColor
+  color: white
+  text-align: center
+  padding: 27px
+
+  .requestSection
+    margin-bottom: 20px
+
+    .yin 
+      opacity: 0.75
+      +copyText
+      margin-bottom: 5px
+
+    .yang
+      margin-bottom: 0px
+      // font-family: Avenir-Light
+      letter-spacing: 0.5px
+
+      img
+        height: 14px
+        width: auto
+        margin-right: 4px
+        margin-top: -3px
+
+.deets
+  padding: 23px
+  padding-top: 51px
+  padding-bottom: 51px
+  text-align: center
+
+  .phoneComp
+    width: 106px
+    // margin-bottom: 23px
+
+  p
+    +copyText
+    color: #353942
+    margin-top: 30px

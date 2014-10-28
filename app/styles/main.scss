@@ -1,0 +1,25 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "compass/css3";
+
+@import "landing.sass";
+
+// Fonts
+@include font-face("Avenir Light", font-files("fonts/Avenir-Light.otf"));
+@include font-face("Avenir Medium", font-files("fonts/Avenir-Medium.otf"));
+@include font-face("Avenir Black", font-files("fonts/Avenir-Black.otf"));
+@include font-face("Avenir Book", font-files("fonts/Avenir-Book.otf"));
+@include font-face("Avenir Heavy", font-files("fonts/Avenir-Heavy.otf"));
+
+
+// Overrides
+.btn{
+  border-radius: 0px !important;
+}
+
+*:focus, *:active {
+    outline: 0 !important;
+}
