@@ -1,0 +1,15 @@
+<div class="light"> <!-- <p class="bigName">Wavelength</p> --> <retina-image class="betaImage animated fadeIn" src="images/beta.png" retina-src="images/beta@2x.png"></retina-image> <!--   <div class="rotatingText animated fadeIn">
+    <p class="str1" ng-repeat="suggestion in useWith" ng-if="$index == idx">{{suggestion.str1}}</p>
+    <p class="str2" ng-repeat="suggestion in useWith" ng-if="$index == idx">{{suggestion.str2}}</p>
+  </div> --> <button ng-repeat="platform in platforms" ng-if="!runningOn || runningOn == platform.name" class="btn downloadButton" ng-href="{{platform.link}}" target="_blank"> Download for {{platform.name}} </button> <!--   <button
+    ng-if="runningOn == 'Mac' || runningOn == 'Windows' || runningOn == 'Linux'"
+    class="btn downloadButton"
+    href="app.joinhashtag.com">
+    Try it in your browser
+  </button> --> <p>or <a href="http://app.joinhashtag.com">try it in your browser</a></p> <!--   <button ng-if="!platform || platform == 'android'" class="btn downloadButton" href="CHANGE_THIS" target="_blank">Download for Android</button>
+
+  <button ng-if="!platform || platform == 'mac'" class="btn downloadButton" href="https://itunes.apple.com/gb/app/hashtag/id920690505?mt=8" target="_blank">Download for Mac</button>
+
+  <button ng-if="!platform || platform == 'windows'" class="btn downloadButton" href="CHANGE_THIS" target="_blank">Download for Windows</button>
+
+  <button ng-if="!platform || platform == 'linux'" class="btn downloadButton" href="CHANGE_THIS" target="_blank">Download for Linux</button> --> </div> <div class="dark"> <div class="requestSection"> <p class="yin">Something missing? Suggest it in</p> <p class="yang"><img src="images/logo.1d1f77a8.png">feature-requests</p> </div> <div class="requestSection"> <p class="yin">Something broken? Let us know in</p> <p class="yang"><img src="images/logo.1d1f77a8.png">bugs</p> </div> </div> <div class="deets"> <retina-image class="phoneComp" src="images/phoneComp.png" retina-src="images/phoneComp@2x.png"></retina-image> <p> <span ng-repeat="platform in platforms"> <a ng-class="{active: 'platform.name == runningOn'}" ng-href="{{platform.link}}">{{platform.name | lowercase}}</a> <span ng-if="!$last"> / </span> </span> </p> <p>Visit joinhashtag.com on any device to download.</p> </div>
