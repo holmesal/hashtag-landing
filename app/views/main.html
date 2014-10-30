@@ -7,14 +7,14 @@
     <p class="str2" ng-repeat="suggestion in useWith" ng-if="$index == idx">{{suggestion.str2}}</p>
   </div> -->
 
-  <button 
+  <a 
     ng-repeat="platform in platforms" 
     ng-if="!runningOn || runningOn == platform.name" 
     class="btn downloadButton" 
     ng-href="{{platform.link}}" 
     target="_blank">
     Download for {{platform.name}}
-  </button>
+  </a>
 
 <!--   <button
     ng-if="runningOn == 'Mac' || runningOn == 'Windows' || runningOn == 'Linux'"

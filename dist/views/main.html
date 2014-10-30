@@ -1,7 +1,7 @@
 <div class="light"> <!-- <p class="bigName">Wavelength</p> --> <retina-image class="betaImage animated fadeIn" src="images/beta.aa9a3173.png" retina-src="images/beta@2x.37725431.png"></retina-image> <!--   <div class="rotatingText animated fadeIn">
     <p class="str1" ng-repeat="suggestion in useWith" ng-if="$index == idx">{{suggestion.str1}}</p>
     <p class="str2" ng-repeat="suggestion in useWith" ng-if="$index == idx">{{suggestion.str2}}</p>
-  </div> --> <button ng-repeat="platform in platforms" ng-if="!runningOn || runningOn == platform.name" class="btn downloadButton" ng-href="{{platform.link}}" target="_blank"> Download for {{platform.name}} </button> <!--   <button
+  </div> --> <a ng-repeat="platform in platforms" ng-if="!runningOn || runningOn == platform.name" class="btn downloadButton" ng-href="{{platform.link}}" target="_blank"> Download for {{platform.name}} </a> <!--   <button
     ng-if="runningOn == 'Mac' || runningOn == 'Windows' || runningOn == 'Linux'"
     class="btn downloadButton"
     href="app.joinhashtag.com">
