@@ -245,6 +245,18 @@ module.exports = function (grunt) {
             },
             post: {}
           }
+        },
+        patterns: {
+          html: [
+            [
+              /<retina-image[^\>]*[^\>\S]+src=['"]([^"']+)["']/gm,
+              'Update retina images'
+            ],
+            [
+              /<retina-image[^\>]*[^\>\S]+retina-src=['"]([^"']+)["']/gm,
+              'Update retina images'
+            ]
+          ]
         }
       }
     },
