@@ -22,10 +22,10 @@ angular.module('landingApp')
         link: 'https://play.google.com/store/apps/details?id=com.mtnlab.wavelength'
       ,
         name: 'Mac'
-        link: 'http://shortwave-releases.s3.amazonaws.com/Shortwave.dmg'
-      # ,
-      #   name: 'Windows'
-      #   link: 'http://amazons3.com'
+        link: 'http://shortwave-releases.s3.amazonaws.com/Hashtag.dmg'
+      ,
+        name: 'Windows'
+        link: 'http://shortwave-releases.s3.amazonaws.com/Hashtag.zip'
       # ,
       #   name: 'Linux'
       #   link: 'http://amazons3.com'
