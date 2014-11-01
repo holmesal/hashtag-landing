@@ -6,7 +6,7 @@
     class="btn downloadButton"
     href="app.joinhashtag.com">
     Try it in your browser
-  </button> --> <!-- <p>or <a href="http://app.joinhashtag.com">try it in your browser</a></p> --> <!--   <button ng-if="!platform || platform == 'android'" class="btn downloadButton" href="CHANGE_THIS" target="_blank">Download for Android</button>
+  </button> --> <p ng-if="runningOn == 'Mac' || runningOn == 'Windows' || runningOn == 'Linux'">or <a href="http://shortwave-dev.firebaseapp.com" target="_blank">try it in your browser</a></p> <!--   <button ng-if="!platform || platform == 'android'" class="btn downloadButton" href="CHANGE_THIS" target="_blank">Download for Android</button>
 
   <button ng-if="!platform || platform == 'mac'" class="btn downloadButton" href="https://itunes.apple.com/gb/app/hashtag/id920690505?mt=8" target="_blank">Download for Mac</button>
 
