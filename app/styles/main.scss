@@ -8,12 +8,26 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "landing.sass";
 
 // Fonts
-@include font-face("Avenir-Light", font-files("/styles/fonts/Avenir-Light.otf", opentype));
-@include font-face("Avenir-Medium", font-files("/styles/fonts/Avenir-Medium.otf", opentype));
-@include font-face("Avenir-Black", font-files("/styles/fonts/Avenir-Black.otf", opentype));
-@include font-face("Avenir-Book", font-files("/styles/fonts/Avenir-Book.otf", opentype));
-@include font-face("Avenir-Heavy", font-files("/styles/fonts/Avenir-Heavy.otf", opentype));
-
+@font-face{
+  font-family: "Avenir-Light";
+  src: url("fonts/Avenir-Light.otf") format('opentype');
+}
+@font-face{
+  font-family: "Avenir-Medium";
+  src: url("fonts/Avenir-Medium.otf") format('opentype');
+}
+@font-face{
+  font-family: "Avenir-Black";
+  src: url("fonts/Avenir-Black.otf") format('opentype');
+}
+@font-face{
+  font-family: "Avenir-Book";
+  src: url("fonts/Avenir-Book.otf") format('opentype');
+}
+@font-face{
+  font-family: "Avenir-Heavy";
+  src: url("fonts/Avenir-Heavy.otf") format('opentype');
+}
 
 // Overrides
 .btn{
