@@ -8,7 +8,8 @@
  # Controller of the landingApp
 ###
 angular.module('landingApp')
-  .controller 'MainCtrl', ($scope) ->
+  .controller 'MainCtrl', ($scope, segmentio) ->
+
 
     userAgent = navigator.userAgent || navigator.vendor || window.opera
 
@@ -41,3 +42,8 @@ angular.module('landingApp')
       $scope.runningOn = 'Mac'
     else if userAgent.match( /Linux/i )
       $scope.runningOn = 'Linux'
+
+
+    # Log the page load
+    segmentio.page 'Landing', 
+      platform: $scope.runningOn

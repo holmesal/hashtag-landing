@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'segmentio'
   ])
   .config ($routeProvider) ->
     $routeProvider
@@ -27,4 +28,7 @@ angular
       #   controller: 'AboutCtrl'
       .otherwise
         redirectTo: '/'
+
+  .run (segmentio) ->
+    segmentio.load 'gIJ6qWMwlr'
 
